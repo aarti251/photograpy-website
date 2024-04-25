@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>photography</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="javascript.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    jQuery(function($){
+   var $navbar =$('.navbar');
+   $(window).scroll(function(event){
+      var $current = $(this).scrollTop();
+      if($current >0){
+         $navbar.addClass('active-nav');
+      }else{
+         $navbar.removeClass('active-nav');
+      }
+   });
+});
+  </script>
+</head>
+<body>
+   
+  
+  <!-- As a heading -->
+  <header id="first">
+  <nav  class="navbar fixed-top  navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="./assets/logo.png" alt="logo"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <divclass="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#first">HOME</a>
+          </li>
+          
+          <li class="nav-item dropdown" id="portfolio">
+            <a class="nav-link dropdown-toggle  active" href="#portfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PORTFOLIO
+            </a>
+            </li>
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link  active"  href="#about-u">ABOUT</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#test">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn" href="#contact-u">CONTACT</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<!--slider -->
+<section>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/s1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>We Ensure better quality for a better world</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/s2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>We Ensure better quality for a better world/>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/s3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>We Ensure better quality for a better world</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!--gallary-->
+<section>
+  <div class="container">
+    <h3>IMAGE GALLARY</h3>
+   <div class="row ">
+    <div class="col-lg-3 col-md-6 col-ax-6">
+      <div class="thubnail">
+        <div class="img-container ">
+      <img src="./assets/p2.jpg" class="imges" alt="gallery"/>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-g-3 col-md-6 col-ax-6">
+      <div class="thubnail">
+        <div class="img-container">
+      <img src="./assets/p1.jpg" class="imges" alt="gallery"/>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-ax-6">
+      <div class="thubnail">
+        <div class="img-container">
+      <img src="./assets/p5.jpg" class="imges" alt="gallery"/>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="thubnail"> 
+        <div class="img-container">
+       
+      <img src="./assets/p6.jpg" class="imges four-img" alt="gallery"/>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="thubnail">
+        <div class="img-container">
+      <img src="./assets/p7.jpg"class="imges" alt="gallery"/>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="thubnail">
+        <div class="img-container">
+      <img src="./assets/p3.jpg" class="imges" alt="gallery"/>
+        </div>
+    
+    </div>
+    </div>
+   </div>
+  </div>
+</div>
+</section>
+<!--testimonials-->
+<section>
+<div id="test" class='about'>
+  <div class="about-left">
+  
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/c1.jpg" class="d-block  about-img w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/c2.jpg" class="d-block  about-img w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/c3.jpg" class="d-block  about-img w-100" alt="...">
+        </div>
+      </div>
+    
+      
+    
+   
+  </div>
+
+  </div>
+<div class="about-right">
+ <h3>TESTIMONIALS</h3>
+ <h2>nurturing tomorrow's leaders today</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et vero? Repellendus, adipisci cupiditate impedit corrupti a cumque commodi facilis officia eaque consequuntur atque doloremque.</p>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias soluta distinctio tempore eveniet, iure culpa qui eius quidem, debitis accusamus odio voluptatum recusandae rem quod.</p>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi omnis cupiditate quia? Pariatur qui quibusdam nisi, amet, eum, eos quia consequatur accusamus harum eius repellat!</p>
+ </div>  
+
+</div>
+      
+</div>
+
+</section>
+<!--body-->
+<section>
+<div class='hero'> 
+  <div class="hero-text">
+      <h1>We Ensure better education for a better world</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Explicabo expedita, distinctio saepe deserunt voluptate
+           voluptatem eum veniam accusamus aliquam alias!</p>
+           <button class='btn'>Explore more</button>
+  </div>
+  </div>
+</section>
+<!--our campus-->
+<section>
+  <div class='campus'>
+    <h3 class="photo">OUR  PHOTOGRAPHY</h3>
+    <div class="gallery">
+        <img src="assets/i1.jpg" alt=''/>
+        <img class="im" src="assets/p1.jpg" alt=''/>
+        <img class="in" src="assets/i6.jpg" alt=''/>
+        <img src="assets/i5.jpg" alt=''/>
+    </div>
+    <button class='btn dart-btn'>See more here</button>
+        </div>
+       <div id="about-u"> 
+        <h3 >ABOUT US</h3>
+        <div  class='programs'>
+         
+          <div class="program">
+              <img src="./assets/a1.jpg" alt=''/>
+              <div class="caption">
+                <img src="./assets/capture.png" alt=''/>
+                <p>OUR WORK</p>
+              </div>
+          </div>
+          <div class="program">
+              <img src="./assets/a2.jpg"  alt=''/>
+              <div class="caption">
+                <img src="./assets/c1.png" alt=''/>
+                <p>OUR PICTURE</p>
+              </div>
+          </div>
+          <div class="program">
+              <img src="./assets/a3.jpg"  alt=''/>
+              <div class="caption">
+                <img src="./assets/picture.png" alt=''/>
+                <p>OUR CAPTURE</p>
+              </div>
+          </div>
+      </div>
+    
+    </div>
+  </section>
+  <!--contact-->
+  <section>
+
+  <div id="contact-u">
+        <h2  class="title ">CONTACT US</h2>
+        <div  class='contact'>
+         
+          <div class="contact-col">
+              <h3>Send us a message <img src="./assets/mail.png" alt=''/></h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet porro quidem corporis architecto, ab inventore suscipit corrupti, odio non perferendis repellat ex ea aperiam saepe. Fuga ea neque sapiente obcaecati.</p>
+              <ul>
+                  <li><img src="./assets/email.png" alt=''/>contact@gmail.com</li>
+                  <li><img src="./assets/phone.png" alt=''/>+1 123-456-7890</li>
+                  <li><img src="./assets/location.png" alt=''/>massachusettts,cambridge<br/>ma 6758,united state</li>
+              </ul>
+          </div>
+  
+          <div class="contact-col">
+              <form >
+                  <label>Your name</label>
+                  <input type='text' name='name' placeholder='enter your name' required/>
+                  <label>Phone number</label> 
+                  <input type='tel' name='phone' placeholder='enter your phone number' required/>
+                  <label>write your message here</label> 
+                  <textarea name='message'rows="6" placeholder='enter your message' required></textarea>
+                  <button class='btn' type='submit'>Submit Now</button>
+              </form>
+             
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--fotter-->
+      <div class='footer'>
+        <p> © 2024 ARUniversity. All rights reserved</p>
+        <ul>
+          <li>terms of services</li>
+          <li>privacy policy</li>
+        </ul>
+    </div>
+    
+  
+  
+   
+   
+     
+   
+ 
+
+
+  
+    
+  
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+</body>
+</html>
